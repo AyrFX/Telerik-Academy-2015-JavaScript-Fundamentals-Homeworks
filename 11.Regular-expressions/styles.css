@@ -1,0 +1,36 @@
+div.bordered {
+    border: 1px double black;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+
+div ul li span {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    text-decoration: underline;
+    color: darkred;
+}
+
+span.explanation {
+    text-decoration: none;
+    font-style: italic;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+thead, tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+pre {
+    background-color: #f8f8f8;
+}

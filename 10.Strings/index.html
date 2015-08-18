@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Strings Homework</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h3>
+        Strings Homework
+    </h3>
+    <div id="problem1" class="bordered">
+        <span>Problem 1:</span> Reverse String
+        <br/>
+        <ul>
+            <li>
+                Write a JavaScript function that reverses a string and returns it.
+            </li>
+        </ul>
+        Example:
+        <table>
+        <thead>
+            <tr>
+                <th align="center">input</th>
+                <th align="center">output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">sample</td>
+                <td align="center">elpmas</td>
+            </tr>
+        </tbody>
+        </table>
+        <hr/>
+        <div id="result1">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem2" class="bordered">
+        <span>Problem 2:</span> Correct brackets
+        <br/>
+        <ul>
+            <li>
+                Write a JavaScript function to check if in a given expression the brackets are put correctly.
+            </li>
+        </ul>
+        Example of correct expression: <code>((a+b)/5-d)</code>. Example of incorrect expression: <code>)(a+b))</code>.
+        <hr/>
+        <div id="result2">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem3" class="bordered">
+        <span>Problem 3:</span> Sub-string in text
+        <br/>
+        <ul>
+            <li>
+                Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+            </li>
+        </ul>
+        Example:<br/>
+        The target sub-string is <code>in</code><br/>
+        The text is as follows: We are liv<strong>in</strong>g <strong>in</strong> an yellow submar<strong>in</strong>e. We don't have anything else. <strong>in</strong>side the submar<strong>in</strong>e is very tight. So we are dr<strong>in</strong>king all the day. We will move out of it <strong>in</strong> 5 days.<br/>
+        The result is: <code>9</code>
+        <hr/>
+        <div id="result3">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem4" class="bordered">
+        <span>Problem 4:</span> Parse tags
+        <br/>
+        <ul>
+            <li>
+                You are given a text. Write a function that changes the text in all regions:
+                <pre>
+                    <code>
+                        &lt;upcase&gt;text&lt;/upcase&gt; to uppercase.
+                        &lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase
+                        &lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)
+                    </code>
+                </pre>
+            </li>
+        </ul>
+        <p>
+            Example: We are <code>&lt;mixcase&gt;living&lt;/mixcase&gt;</code> in a <code>&lt;upcase&gt;yellow submarine&lt;/upcase&gt;</code>. We <code>&lt;mixcase&gt;don't&lt;/mixcase&gt;</code> have <code>&lt;lowcase&gt;anything&lt;/lowcase&gt;</code> else.
+        </p>
+        <p>
+            The expected result: <br/>
+            We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+        </p>
+        <p>
+            Note: Regions can be nested.
+        </p>
+        <hr/>
+        <div id="result4">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem5" class="bordered">
+        <span>Problem 5:</span> nbsp
+        <br/>
+        Write a function that replaces non breaking white-spaces in a text with &amp nbsp;
+        <hr/>
+        <div id="result5">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem6" class="bordered">
+        <span>Problem 6:</span> Extract text from HTML
+        <br/>
+        <ul>
+            <li>
+                Write a function that extracts the content of a html page given as text.
+            </li>
+            <li>
+                The function should return anything that is in a tag, without the tags.
+            </li>
+        </ul>
+        Example:
+        <pre>
+            <code>
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Sample site&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div&gt;text
+                        &lt;div&gt;more text&lt;/div&gt;
+                            and more...
+                        &lt;/div&gt;
+                        in body
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        Result: Sample sitetextmore textand more...in body
+        <hr/>
+        <div id="result6">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem7" class="bordered">
+        <span>Problem 7:</span> Parse URL
+        <br/>
+        <ul>
+            <li>  Write a script that parses an URL address given in the format: <code>[protocol]://[server]/[resource]</code>
+                and extracts from it the <code>[protocol]</code>, <code>[server]</code> and <code>[resource]</code> elements.</li>
+            <li>  Return the elements in a JSON object.</li>
+        </ul>
+        Example:
+        <table>
+            <thead>
+                <tr>
+                    <th align="center">URL</th>
+                    <th align="center">result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><code>http://telerikacademy.com/Courses/Courses/Details/239</code></td>
+                    <td align="center">{ protocol: <code>http</code>, <br> server: <code>telerikacademy.com</code> <br> resource: <code>/Courses/Courses/Details/239</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <div id="result7">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem8" class="bordered">
+        <span>Problem 8:</span> Replace tags
+        <br/>
+        <ul>
+            <li>  Write a JavaScript function that replaces in a HTML document given as string all the tags <code>&lt;a href="…"&gt;…&lt;/a&gt;</code> with corresponding tags <code>[URL=…]…/URL]</code>.</li>
+        </ul>
+        Example:
+        <table>
+            <thead>
+                <tr>
+                    <th align="center">input</th>
+                    <th align="center">output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><code>&lt;p&gt;Please visit &lt;a href="http://academy.telerik.com"&gt;our site&lt;/a&gt; to choose a training course. Also visit &lt;a href="www.devbg.org"&gt;our forum&lt;/a&gt; to discuss the courses.&lt;/p&gt;</code></td>
+                    <td align="center"><code>&lt;p&gt;Please visit [URL=http://academy.telerik.com]our site[/URL] to choose a training course. Also visit [URL=www.devbg.org]our forum[/URL] to discuss the courses.&lt;/p&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <div id="result8">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem9" class="bordered">
+        <span>Problem 9:</span> Extract e-mails
+        <br/>
+        <ul>
+            <li>  Write a function for extracting all email addresses from given text.</li>
+            <li>  All sub-strings that match the format @… should be recognized as emails.</li>
+            <li>  Return the emails as array of strings.</li>
+        </ul>
+        <hr/>
+        <div id="result9">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem10" class="bordered">
+        <span>Problem 10:</span> Find palindromes
+        <br/>
+        <ul>
+            <li>  Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".</li>
+        </ul>
+        <hr/>
+        <div id="result10">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem11" class="bordered">
+        <span>Problem 11:</span> String format
+        <br/>
+        <ul>
+            <li>  Write a function that formats a string using placeholders.</li>
+            <li>  The function should work with up to 30 placeholders and all types.</li>
+        </ul>
+        Examples:
+        <pre>
+            <code>
+                var str = stringFormat('Hello {0}!', 'Peter');
+                //str = 'Hello Peter!';
+
+                var frmt = '{0}, {1}, {0} text {2}';
+                var str = stringFormat(frmt, 1, 'Pesho', 'Gosho');
+                //str = '1, Pesho, 1 text Gosho'
+            </code>
+        </pre>
+        <hr/>
+        <div id="result11">
+            <span>Result:</span>
+        </div>
+    </div>
+    <div id="problem12" class="bordered">
+        <span>Problem 12:</span> Generate list
+        <br/>
+        <ul>
+            <li>  Write a function that creates a HTML <code>&lt;ul&gt;</code> using a template for every HTML <code>&lt;li&gt;</code>.</li>
+            <li>  The source of the list should be an array of elements.</li>
+            <li>  Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.</li>
+        </ul>
+        Example: HTML:
+        <pre>
+            <code>
+                &lt;div data-type="template" id="list-item"&gt;
+                &lt;strong&gt;-{name}-&lt;/strong&gt; &lt;span&gt;-{age}-&lt;/span&gt;
+                /div&gt;
+            </code>
+        </pre>
+        JavaScript:
+        <pre>
+            <code>
+                var people = [{name: 'Peter', age: 14},…];
+                var tmpl = document.getElementById('list-item').innerHtml;
+                var peopleList = generateList(people, template);
+                //peopleList = '&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Peter&lt;/strong&gt; &lt;span&gt;14&lt;/span&gt;&lt;/li&gt;&lt;li&gt;…&lt;/li&gt;…&lt;/ul&gt;'
+            </code>
+        </pre>
+        <hr/>
+        <div id="result12">
+            <span>Result:</span>
+        </div>
+    </div>
+    <script src="Common-functions.js" type="text/javascript"></script>
+    <script src="01.Reverse-string.js" type="text/javascript"></script>
+    <script src="02.Correct-brackets.js" type="text/javascript"></script>
+    <script src="03.Substring-in-text.js" type="text/javascript"></script>
+    <script src="04.Parse-tags.js" type="text/javascript"></script>
+    <script src="05.nbsp.js" type="text/javascript"></script>
+    <script src="06.Extract-text-from-HTML.js" type="text/javascript"></script>
+    <script src="07.Parse-URL.js" type="text/javascript"></script>
+    <script src="08.Replace-tags.js" type="text/javascript"></script>
+    <script src="09.Extract-emails.js" type="text/javascript"></script>
+    <script src="10.Find-palindromes.js" type="text/javascript"></script>
+    <script src="11.String-format.js" type="text/javascript"></script>
+    <script src="12.Generate-list.js" type="text/javascript"></script>
+</body>
+</html>
